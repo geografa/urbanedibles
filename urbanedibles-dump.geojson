@@ -2380,18 +2380,6 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [-87.634018,41.853485]
-        },
-        "properties": {
-          "shortname": "Persimmon Tree",
-          "name": "Persimmon Tree near 29th/se main",
-          "description": ". Submitted by baconfanclub on 03/01/08 who says: The status of this source is unknown. Ask before you pick!",
-          "url": null
-        }
-     },        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
                 "coordinates": [-122.637704,45.422441]
         },
         "properties": {
@@ -2602,18 +2590,6 @@
           "shortname": "Fig Tree",
           "name": "Fig Tree near 6025 NE 28th Ave",
           "description": "I have a HUGE fig tree in my front yard which produces an abundance of fruit. Please feel free to come by and take home a basket. . Submitted by Todd on 05/09/08 who says: I own this source and want to include it in the public database.",
-          "url": null
-        }
-     },        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-81.480144,28.543041]
-        },
-        "properties": {
-          "shortname": "Starfruit Tree",
-          "name": "Starfruit Tree near 129 cherry laurel drive orlando florida 32835",
-          "description": "behind a sign. Submitted by rheots on 05/09/08 who says: This source is on public property.",
           "url": null
         }
      },        {
@@ -6142,18 +6118,6 @@
           "shortname": "Apple Tree",
           "name": "Apple Tree near 13000 SW Aragon St.",
           "description": ". Submitted by Trevor on 06/21/10 who says: The status of this source is unknown. Ask before you pick!",
-          "url": null
-        }
-     },        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-70.1907457,43.6675816]
-        },
-        "properties": {
-          "shortname": "Cherry Tree",
-          "name": "Cherry Tree near 11975 SW Belvedere Place",
-          "description": ". Submitted by Trevor on 06/22/10 who says: The status of this source is unknown. Ask before you pick!",
           "url": null
         }
      },        {
