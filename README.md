@@ -1,4 +1,4 @@
 urbanedibles
 ============
 
-Dump of Urban Edibles web site data circa 2012.
+Dump of [Urban Edibles](http://urbanedibles.org) web site data circa 2012.
