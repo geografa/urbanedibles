@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title></title>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src='//api.tiles.mapbox.com/mapbox.js/v1.5.1/mapbox.js'></script>
+  <link href='//api.tiles.mapbox.com/mapbox.js/v1.5.1/mapbox.css' rel='stylesheet' />
+  <!--[if lte IE 8]>
+    <link href='//api.tiles.mapbox.com/mapbox.js/v1.5.1/mapbox.ie.css' rel='stylesheet'>
+  <![endif]-->
+  <style>
+    body { margin:0; padding:0; }
+    #map { position:absolute; top:0; bottom:0; width:100%; }
+    #search {
+      position:absolute; top:10px; right:10px; font-size:200%;      
+    }
+  </style>
+</head>
+<body>
+<div id='map'></div>
+<input placeholder='edible name (e.g. fig)' id='search' />
+<script type='text/javascript'>
+var map = L.mapbox.map('map', 'grafa.gh708bl8')
+    .setView([45.538105, -122.669177], 13);
+
+var markerLayer = L.mapbox.markerLayer()
+    .loadURL('urbanedibles-dump.geojson')
+    .addTo(map);
+$('#search').keyup(search);
+
+function search() {
+    // get the value of the search input field
+    var searchString = $('#search').val().toLowerCase();
+    markerLayer.setFilter(showEdible);
+    // here we're simply comparing the 'state' property of each marker
+    // to the search string, seeing whether the former contains the latter.
+    function showEdible(feature) {
+        return feature.properties.title
+            .toLowerCase()
+            .indexOf(searchString) !== -1;
+    }
+}
+</script>
+</body>
+</html>
